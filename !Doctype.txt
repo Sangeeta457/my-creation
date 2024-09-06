@@ -1,0 +1,12 @@
+<!Doctype>
+<html>
+<head>
+<title> This is a my web page</title>
+</head>
+<body>
+
+<h1> This is a heading</h1>
+<p> this is a paragraph</p>
+
+</body>
+</html>

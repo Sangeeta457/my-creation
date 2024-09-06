@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.second-child{
+    position: relative;
+    top: 210px;
+    width: 300px;
+    right: 200px;
+}
+body{
+    background-image: url('https://c0.wallpaperflare.com/preview/856/635/583/blur-shining-background-shiny.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact  {
+    max-width: 900px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-self: flex-end;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 10px 20px;
+    display:flex ;
+}
+
+
+container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.btn{
+    padding: 10px 15px;
+}
+
+.send-mdg{
+    float: right;
+}

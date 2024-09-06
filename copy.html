@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.info-box i {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.location {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.location h2 {
+    margin-bottom: 20px;
+}
+
+.location img {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.input-box label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    color: #333;
+    font-size: 0.9em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ label, .input-box textarea:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box textarea:not(:placeholder-shown) ~ label {
+    top: -30px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.input-box textarea {
+    resize: none;
+    height: 100px;
+}
+
+.input-box input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.input-box input[type="submit"]:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact-info">
+        <div class="info-box">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>507-465-1234</p>
+        </div>
+        <div class="info-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>sangeetakushwah24@navgurukul.org</p>
+        </div>
+        <div class="info-box">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Pathare Wasti Rd, Lohegaon, Pune, Maharashtra 411047</p>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>Location</h2>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=18.5994767,73.938718&zoom=15&size=600x300&maptype=roadmap
+        &markers=color:red%7Clabel:C%7C18.5994767,73.938718" alt="Google Map of Pathare Wasti, Lohegaon, Pune">
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Message</h2>
+        <form>
+            <div class="input-box">
+                <input type="text" name="fullname" required="required">
+                <label>Full Name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" required="required">
+                <label>Phone</label>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" required="required">
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="location" required="required">
+                <label>Location</label>
+            </div>
+            <div class="input-box">
+                <textarea name="message" required="required"></textarea>
+                <label>Type your message...</label>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
